@@ -9,6 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -29,6 +30,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="backdrop-hook"></div>
+    <div id="modal-hook"></div>
     <div id="drawer-hook"></div>
     <div id="root"></div>
     <!--
@@ -40,6 +42,17 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
+      <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYWJoaW5hdjExMjEiLCJhIjoiY2w0eTVybjR5MXdmNzNlbWxrNnRzZnVlMCJ9.0M3m_vFjWlEs29hEriD5YQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+  });
+</script>
+
     -->
+
+
   </body>
 </html>
